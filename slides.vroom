@@ -1,0 +1,43 @@
+# This is a sample Vroom input file. It should help you get started.
+#
+# Edit this file with your content. Then run `vroom --vroom` to start
+# the show!
+#
+# See `perldoc Vroom::Vroom` for complete details.
+#
+---- config
+# Basic config options.
+title: Less is More
+indent: 10
+height: 14
+width: 50
+skip: 0
+
+----
+Less is More
+
+Kang-min Liu <gugod@gugod.org>
+----
+jQuery
+----
+寫少做多的程式
+---- js
+$(".foo").addClass("bar")
+----
+字彙簡潔
+
+* one
+* css
+* bind
+* addClass
+---- js
+$
+---- js
+$.prototype
+---- js
+$.fn
+----
+很怪的主題
+----
+The End
+多謝來聽
