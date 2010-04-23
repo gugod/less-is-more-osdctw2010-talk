@@ -16,28 +16,82 @@ skip: 0
 ----
 Less is More
 
-Kang-min Liu <gugod@gugod.org>
+Kang-min Liu
+gugod@gugod.org
 ----
 jQuery
 ----
 寫少做多的程式
 ---- js
-$(".foo").addClass("bar")
-----
-字彙簡潔
-
-* one
-* css
-* bind
-* addClass
+$("p").hide();
 ---- js
 $
 ---- js
-$.prototype
+$("p")
 ---- js
-$.fn
+$(" ")
+---- js
+$(" ").hide();
+---- js
+$("p").hide();
+---- js
+$("a").hide();
+---- js
+$("a,p").hide();
+---- js
+$("p").bind("click",
+            function() { ... });
+---- js
+$("p").one ("click",
+            function() { ... });
 ----
-很怪的主題
+好讀
+----
+用字簡單
+----
+行為複雜
+---- js
+$("a").one("click", ...);
+----
+在被點第一下的時候做某事，
+但被點第二下之後，
+則不再做同樣的事。
+---- js
+$("a").bind("click", function() {
+    $(this).unbind("click");
+
+    ...
+});
+----
+one
+----
+* addEventListenerOnce
+* addOneEventListener
+* bindOnce
+* bindOne
+----
+one
+----
+簡單用字
+----
+情境分明
+脈絡能尋
+---- js
+$("a").one("click", ...);
+----
+API 設計
+----
+ DOM API
+----
+(DOM API)--
+----
+API → Good
+----
+* 情境分明
+* 簡單用字
+* 以簡御繁
+----
+
 ----
 The End
 多謝來聽
