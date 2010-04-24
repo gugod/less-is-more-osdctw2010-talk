@@ -1,16 +1,9 @@
-# This is a sample Vroom input file. It should help you get started.
-#
-# Edit this file with your content. Then run `vroom --vroom` to start
-# the show!
-#
-# See `perldoc Vroom::Vroom` for complete details.
-#
 ---- config
 # Basic config options.
 title: Less is More
 indent: 10
-height: 14
-width: 50
+height: 11
+width: 52
 skip: 0
 
 ----
@@ -19,22 +12,26 @@ Less is More
 Kang-min Liu
 gugod@gugod.org
 ----
-jQuery
+和而不同 Same but different,
+少就是多 Less is more.
+
+Handlino
 ----
 寫少做多的程式
+----
+jQuery
 ---- js
+$("p").show();
 $("p").hide();
 ---- js
 $
 ---- js
 $("p")
 ---- js
-$(" ")
----- js
-$(" ").hide();
----- js
+$("p").show();
 $("p").hide();
 ---- js
+$("a").show();
 $("a").hide();
 ---- js
 $("a,p").hide();
@@ -48,6 +45,10 @@ $("p").one ("click",
 好讀
 ----
 用字簡單
+
+* bind
+* one
+* show, hide
 ----
 行為複雜
 ---- js
@@ -63,35 +64,384 @@ $("a").bind("click", function() {
     ...
 });
 ----
-one
-----
 * addEventListenerOnce
 * addOneEventListener
 * bindOnce
 * bindOne
+* first
 ----
 one
 ----
 簡單用字
 ----
-情境分明
-脈絡能尋
+以簡御繁
 ---- js
-$("a").one("click", ...);
+Beautiful
 ----
+漂亮的
 API 設計
+----
+. o O (Good API) ?
 ----
  DOM API
 ----
 (DOM API)--
 ----
-API → Good
+簡單用字?
+----
+用字繁瑣
+ 
+* document.getElementById("foo")
+* el.childrens[0].prevSiblings
+----
+用字明確
+----
+以繁御簡
+---- js
+document.get("foo")
+---- js
+// prototype.js
+$("foo")
+---- js
+// jQuery
+$("#foo")
+----
+從容器裡頭
+拿東西出來
+---- perl
+  $array->item(3);
+   $hash->retrieve("key");
+$session->fetch("is_admin?")
+     $db->load(42);
+---- perl
+  $array->get(3);
+   $hash->get("key");
+$session->get("is_admin?")
+     $db->get(42);
+---- ruby
+  array[3]
+   hash["key"]
+session["is_admin?"]
+----
+從容器裡頭
+一個一個地
+拿東西出來
+---- c
+int i;
+for(i = 0; i < 10; i++) {
+    x[i] ...
+}
+---- perl
+for my $x (@array) { 
+    $x ...
+}
+---- ruby
+array.each do |x|
+    x ...
+end
+---- ruby
+hash.each do |k,v|
+    ...
+end
+---- perl
+while(my ($k, $v) = each(%hash)) {
+    ...
+}
+---- perl
+$hash->each(sub {
+    my ($k, $v) = @_;
+    ...
+});
+----
+each
+----
+one
+----
+Beautiful
 ----
 * 情境分明
 * 簡單用字
 * 以簡御繁
 ----
+Beautiful
+----
+☯☯
+----
+Ugly
+----
+Perl
+----
+Perl code
+can go really UGLY
+----
+Ugly Perl is very bad,
+for it actually works.
+---- perl
+$@%/(?!:\*)?/
+----
+Ugly _code_ is very bad,
+for it actually works.
+----
+Beautiful
+  is better
+    then ugly.
+----
+學寫程式
+----
+Folk
+programming
+----
+Cargo-cult
+programming
+----
+剪下貼上程式設計
 
+Copy & Paste
+----
+Get
+Things
+Done
+----
+美醜不計
+----
+能動就好
+----
+維護
+----
+$@%/(?!:\*)?/
+----
+學習
+如何寫出
+較容易維護的程式
+----
+目的
+----
+解題
+----
+解得好
+----
+* 程式好讀
+* 程式好快
+* 程式好短
+----
+學
+----
+學語言能力
+----
+* Procedural
+* Functional
+* OO
+* Meta
+----
+學重構
+----
+重複利用
+Reuse
+----
+* 函式 Function
+* 模組 Module
+* 類別 Class
+----
+可測試
+Testable
+----
+寫測試
+Write Tests
+----
+強韌
+Robust
+----
+可讀性
+Readability
+----
+可讀性 ??
+Readability ??
+----
+hmmmmmmmm...
+----
+* addEventListenerOnce
+* addOneEventListener
+* bindOnce
+* bindOne
+* first
+* one
+----
+源碼不可讀
+
+Code
+is not readable...
+----
+唯有情境在
+
+... without
+sufficient context.
+----
+context
+---- ruby
+# ruby
+foo.answer = 42
+---- ruby
+class Foo
+  attr_accessor :answer
+end
+foo = Foo.new
+
+foo.answer = 42
+---- ruby
+# ruby
+class Foo
+  def answer=(v)
+    system("rm -rf /")
+  end
+end
+foo = Foo.new
+
+foo.answer = 42
+----
+「演甚麼就要像甚麼」
+---- ruby
+foo.answer = 42
+----
+→ 可讀性
+----
+《經典咖啡》
+by 宮前美幸
+----
+「一致性的口味，是提升人氣關鍵」
+----
+  一致性
+----
+Consistency is Everything
+----
+Coding,
+(using API)
+is hard...
+----
+code ↔ document
+----
+google: javascript Date
+----
+為何不停查看文件
+What makes it necessary?
+----
+不一致性
+Incosistency
+----
+短期記憶有限
+Limited short-term memory
+----
+遺忘快速
+Quickly forget
+----
+情境切換
+茲事體大
+
+Context switching
+is EXPENSIVE
+----
+API 應
+容易被記憶
+
+API should be
+easily rememberable
+----
+API 應 被設計成
+容易被記憶
+
+API should be designed to be
+easily rememberable
+----
+不必
+一再讀文件
+
+No
+lookup in the document
+----
+不必
+情境切換
+
+No
+context switching 
+---- js
+// jQuery
+// 「最後一個」參數可以是 callback
+$("noun").verb(arg1, arg2, callback)
+
+$("noun").verb(arg1, callback)
+
+$("noun").verb(callback)
+---- ruby
+# each
+# 「容器」就會有 each 方法
+x.each do |i|
+  ...
+end
+
+y.each do |k,v|
+  ...
+end
+---- perl
+# perl
+# 英文字的運算符,
+# 優先權最低
+$a || $b
+$a or  $b
+
+$a && $b
+$a and $b
+---- perl
+# perl
+# $_ 是預設參數
+
+if (/foo/) { ... }
+s/foo/bar/g;
+say;
+----
+工作時
+
+In $work
+----
+使用很多
+別人寫的模組
+
+Use modules
+by different authors
+----
+異質
+
+Heterogeneous
+----
+程式語言  Language
+  ↓
+同質模組  Homogenerous
+----
+Good Language
+----
+Ruby
+----
+Java
+----
+Perl?
+Javascript?
+----
+一致性 API    API Consistency
+  ↓
+文件長度減短   Less Doc
+----
+總結
+----
+《海上鋼琴師》
+----
+「因為鋼琴的琴鍵有限，才能奏出無限的音樂」
+----
+Less Design
+----
+More Possibility
 ----
 The End
-多謝來聽
+謝謝來聽
+----
+One More Thing
+----
+有空看看
+http://more.handlino.com
