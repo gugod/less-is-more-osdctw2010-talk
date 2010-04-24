@@ -12,10 +12,17 @@ Less is More
 Kang-min Liu
 gugod@gugod.org
 ----
-和而不同 Same but different,
-少就是多 Less is more.
+Same but different 和而不同 
+Less is more       少就是多 
 
-Handlino
+http://Handlino.com
+----
+Less is more.
+----
+寫程式的概念
+
+Concept
+of coding
 ----
 寫少做多的程式
 ----
@@ -72,13 +79,43 @@ $("a").bind("click", function() {
 ----
 one
 ----
-簡單用字
+用字簡單
 ----
 以簡御繁
----- js
+----
+Beautiful
+----
+寫少做多的程式
+----
+cpanm
+----
+cpan 模組安裝程式
+----
+不用設定
+
+zero-conf
+----
+cpanm Catalyst
+----
+使命必達
+----
+Beautiful
+----
+寫少做多的程式
+----
+Sinatra
+---- ruby
+get '/' do
+  "OHAI"
+end
+----
+DSL
+for Web App
+----
 Beautiful
 ----
 漂亮的
+----
 API 設計
 ----
 . o O (Good API) ?
@@ -97,6 +134,8 @@ API 設計
 用字明確
 ----
 以繁御簡
+----
+More → Less
 ---- js
 document.get("foo")
 ---- js
@@ -171,20 +210,33 @@ Ugly
 ----
 Perl
 ----
+有些 Perl 程式
+真的很醜
+
 Perl code
 can go really UGLY
 ----
+更糟的是
+那些程式又能正確運作
+
 Ugly Perl is very bad,
 for it actually works.
 ---- perl
 $@%/(?!:\*)?/
 ----
+有些 _程式_
+真的很醜
+
 Ugly _code_ is very bad,
 for it actually works.
 ----
+漂亮比較好
+
 Beautiful
   is better
     then ugly.
+----
+學
 ----
 學寫程式
 ----
@@ -206,9 +258,11 @@ Done
 ----
 能動就好
 ----
-維護
+維護....
 ----
 $@%/(?!:\*)?/
+----
+學
 ----
 學習
 如何寫出
@@ -428,11 +482,25 @@ Javascript?
   ↓
 文件長度減短   Less Doc
 ----
+一致性
+網頁設計
+----
+同一站的風格要一致
+---- html
+<a href="/help">使用說明</a>
+  ↓
+<title>使用說明</title> 
+----
+Consistency
+is
+Everything
+----
 總結
 ----
 《海上鋼琴師》
 ----
-「因為鋼琴的琴鍵有限，才能奏出無限的音樂」
+「因為鋼琴的琴鍵有限
+  才能奏出音樂的無限」
 ----
 Less Design
 ----
@@ -443,5 +511,16 @@ The End
 ----
 One More Thing
 ----
+長官勉勵：
+----
 有空看看
 http://more.handlino.com
+----
+Open Service
+----
+Open Source
+----
+cpanm Acme::Lingua::ZH::Remix
+----
+The End
+(Again)
