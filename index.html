@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>Less is More</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 13 || keynum == 32) {
+        window.location = "001.html";
+        return false;
+    }
+    return true;
+}
+</script>
+<style>
+body {
+    font-family: sans-serif;
+}
+h4 {
+    color: #888;
+}
+</style>
+</head>
+<body>
+<h4>Use SPACEBAR to peruse the slides or click one to start...<h4>
+<h1>Less is More</h1>
+<ul>
+<li><a href="0001.html">Less is More</a></li>
+<li><a href="0002.html">Same but different 和而不同 </a></li>
+<li><a href="0003.html">Less is more.</a></li>
+<li><a href="0004.html">寫程式的概念</a></li>
+<li><a href="0005.html">寫少做多的程式</a></li>
+<li><a href="0006.html">jQuery</a></li>
+<li><a href="0007.js.html">$(&quot;p&quot;).show();</a></li>
+<li><a href="0008.js.html">$</a></li>
+<li><a href="0009.js.html">$(&quot;p&quot;)</a></li>
+<li><a href="0010.js.html">$(&quot;p&quot;).show();</a></li>
+<li><a href="0011.js.html">$(&quot;a&quot;).show();</a></li>
+<li><a href="0012.js.html">$(&quot;a,p&quot;).hide();</a></li>
+<li><a href="0013.js.html">$(&quot;p&quot;).bind(&quot;click&quot;,</a></li>
+<li><a href="0014.js.html">$(&quot;p&quot;).one (&quot;click&quot;,</a></li>
+<li><a href="0015.html">好讀</a></li>
+<li><a href="0016.html">用字簡單</a></li>
+<li><a href="0017.html">行為複雜</a></li>
+<li><a href="0018.js.html">$(&quot;a&quot;).one(&quot;click&quot;, ...);</a></li>
+<li><a href="0019.html">在被點第一下的時候做某事，</a></li>
+<li><a href="0020.js.html">$(&quot;a&quot;).bind(&quot;click&quot;, function() {</a></li>
+<li><a href="0021.html">* addEventListenerOnce</a></li>
+<li><a href="0022.html">one</a></li>
+<li><a href="0023.html">用字簡單</a></li>
+<li><a href="0024.html">以簡御繁</a></li>
+<li><a href="0025.html">Beautiful</a></li>
+<li><a href="0026.html">寫少做多的程式</a></li>
+<li><a href="0027.html">cpanm</a></li>
+<li><a href="0028.html">cpan 模組安裝程式</a></li>
+<li><a href="0029.html">不用設定</a></li>
+<li><a href="0030.html">cpanm Catalyst</a></li>
+<li><a href="0031.html">使命必達</a></li>
+<li><a href="0032.html">Beautiful</a></li>
+<li><a href="0033.html">寫少做多的程式</a></li>
+<li><a href="0034.html">Sinatra</a></li>
+<li><a href="0035.rb.html">get '/' do</a></li>
+<li><a href="0036.html">DSL</a></li>
+<li><a href="0037.html">Beautiful</a></li>
+<li><a href="0038.html">漂亮的</a></li>
+<li><a href="0039.html">API 設計</a></li>
+<li><a href="0040.html">. o O (Good API) ?</a></li>
+<li><a href="0041.html">DOM API</a></li>
+<li><a href="0042.html">(DOM API)--</a></li>
+<li><a href="0043.html">簡單用字?</a></li>
+<li><a href="0044.html">用字繁瑣</a></li>
+<li><a href="0045.html">用字明確</a></li>
+<li><a href="0046.html">以繁御簡</a></li>
+<li><a href="0047.html">More → Less</a></li>
+<li><a href="0048.js.html">document.get(&quot;foo&quot;)</a></li>
+<li><a href="0049.js.html">// prototype.js</a></li>
+<li><a href="0050.js.html">// jQuery</a></li>
+<li><a href="0051.html">從容器裡頭</a></li>
+<li><a href="0052.pl.html">$array-&gt;item(3);</a></li>
+<li><a href="0053.pl.html">$array-&gt;get(3);</a></li>
+<li><a href="0054.rb.html">array[3]</a></li>
+<li><a href="0055.html">從容器裡頭</a></li>
+<li><a href="0056.html">int i;</a></li>
+<li><a href="0057.pl.html">for my $x (@array) { </a></li>
+<li><a href="0058.rb.html">array.each do |x|</a></li>
+<li><a href="0059.rb.html">hash.each do |k,v|</a></li>
+<li><a href="0060.pl.html">while(my ($k, $v) = each(%hash)) {</a></li>
+<li><a href="0061.pl.html">$hash-&gt;each(sub {</a></li>
+<li><a href="0062.html">each</a></li>
+<li><a href="0063.html">one</a></li>
+<li><a href="0064.html">Beautiful</a></li>
+<li><a href="0065.html">* 情境分明</a></li>
+<li><a href="0066.html">Beautiful</a></li>
+<li><a href="0067.html">☯☯</a></li>
+<li><a href="0068.html">Ugly</a></li>
+<li><a href="0069.html">Perl</a></li>
+<li><a href="0070.html">有些 Perl 程式</a></li>
+<li><a href="0071.html">更糟的是</a></li>
+<li><a href="0072.pl.html">$@%/(?!:\*)?/</a></li>
+<li><a href="0073.html">有些 _程式_</a></li>
+<li><a href="0074.html">漂亮比較好</a></li>
+<li><a href="0075.html">學</a></li>
+<li><a href="0076.html">學寫程式</a></li>
+<li><a href="0077.html">Folk</a></li>
+<li><a href="0078.html">Cargo-cult</a></li>
+<li><a href="0079.html">剪下貼上程式設計</a></li>
+<li><a href="0080.html">Get</a></li>
+<li><a href="0081.html">美醜不計</a></li>
+<li><a href="0082.html">能動就好</a></li>
+<li><a href="0083.html">維護....</a></li>
+<li><a href="0084.html">$@%/(?!:\*)?/</a></li>
+<li><a href="0085.html">學</a></li>
+<li><a href="0086.html">學習</a></li>
+<li><a href="0087.html">目的</a></li>
+<li><a href="0088.html">解題</a></li>
+<li><a href="0089.html">解得好</a></li>
+<li><a href="0090.html">* 程式好讀</a></li>
+<li><a href="0091.html">學</a></li>
+<li><a href="0092.html">學語言能力</a></li>
+<li><a href="0093.html">* Procedural</a></li>
+<li><a href="0094.html">學重構</a></li>
+<li><a href="0095.html">重複利用</a></li>
+<li><a href="0096.html">* 函式 Function</a></li>
+<li><a href="0097.html">可測試</a></li>
+<li><a href="0098.html">寫測試</a></li>
+<li><a href="0099.html">強韌</a></li>
+<li><a href="0100.html">可讀性</a></li>
+<li><a href="0101.html">可讀性 ??</a></li>
+<li><a href="0102.html">hmmmmmmmm...</a></li>
+<li><a href="0103.html">* addEventListenerOnce</a></li>
+<li><a href="0104.html">源碼不可讀</a></li>
+<li><a href="0105.html">唯有情境在</a></li>
+<li><a href="0106.html">context</a></li>
+<li><a href="0107.rb.html"># ruby</a></li>
+<li><a href="0108.rb.html">class Foo</a></li>
+<li><a href="0109.rb.html"># ruby</a></li>
+<li><a href="0110.html">「演甚麼就要像甚麼」</a></li>
+<li><a href="0111.rb.html">foo.answer = 42</a></li>
+<li><a href="0112.html">→ 可讀性</a></li>
+<li><a href="0113.html">《經典咖啡》</a></li>
+<li><a href="0114.html">「一致性的口味，是提升人氣關鍵」</a></li>
+<li><a href="0115.html">一致性</a></li>
+<li><a href="0116.html">Consistency is Everything</a></li>
+<li><a href="0117.html">Coding,</a></li>
+<li><a href="0118.html">code ↔ document</a></li>
+<li><a href="0119.html">google: javascript Date</a></li>
+<li><a href="0120.html">為何不停查看文件</a></li>
+<li><a href="0121.html">不一致性</a></li>
+<li><a href="0122.html">短期記憶有限</a></li>
+<li><a href="0123.html">遺忘快速</a></li>
+<li><a href="0124.html">情境切換</a></li>
+<li><a href="0125.html">API 應</a></li>
+<li><a href="0126.html">API 應 被設計成</a></li>
+<li><a href="0127.html">不必</a></li>
+<li><a href="0128.html">不必</a></li>
+<li><a href="0129.js.html">// jQuery</a></li>
+<li><a href="0130.rb.html"># each</a></li>
+<li><a href="0131.pl.html"># perl</a></li>
+<li><a href="0132.pl.html"># perl</a></li>
+<li><a href="0133.html">工作時</a></li>
+<li><a href="0134.html">使用很多</a></li>
+<li><a href="0135.html">異質</a></li>
+<li><a href="0136.html">程式語言  Language</a></li>
+<li><a href="0137.html">Good Language</a></li>
+<li><a href="0138.html">Ruby</a></li>
+<li><a href="0139.html">Java</a></li>
+<li><a href="0140.html">Perl?</a></li>
+<li><a href="0141.html">一致性 API    API Consistency</a></li>
+<li><a href="0142.html">一致性</a></li>
+<li><a href="0143.html">同一站的風格要一致</a></li>
+<li><a href="0144.html.html">&lt;a href=&quot;/help&quot;&gt;使用說明&lt;/a&gt;</a></li>
+<li><a href="0145.html">Consistency</a></li>
+<li><a href="0146.html">總結</a></li>
+<li><a href="0147.html">《海上鋼琴師》</a></li>
+<li><a href="0148.html">「因為鋼琴的琴鍵有限</a></li>
+<li><a href="0149.html">Less Design</a></li>
+<li><a href="0150.html">More Possibility</a></li>
+<li><a href="0151.html">The End</a></li>
+<li><a href="0152.html">One More Thing</a></li>
+<li><a href="0153.html">長官勉勵：</a></li>
+<li><a href="0154.html">有空看看</a></li>
+<li><a href="0155.html">Open Service</a></li>
+<li><a href="0156.html">Open Source</a></li>
+<li><a href="0157.html">cpanm Acme::Lingua::ZH::Remix</a></li>
+<li><a href="0158.html">The End</a></li>
+</ul>
+<p>This presentation was generated by <a
+href="http://ingydotnet.github.com/vroom-pm">Vroom</a>. Use &lt;SPACE&gt; key to go
+forward and &lt;BACKSPACE&gt; to go backwards.
+</p>
+</body>
